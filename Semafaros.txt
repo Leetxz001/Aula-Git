@@ -1,0 +1,39 @@
+/*Autor:Leticia Vitoria
+Nome do programa:Semaforos
+Data: 20/02/2025
+*/
+#define pinLedVermelhoA 13
+#define pinLedAmareloB 3
+#define PinLedVerdeA 11
+#define pinLedVermelhoB 4
+#define pinLedAmareloA 12
+#define PinLedVerdeB 2
+ 
+ void setup()
+{
+  pinMode(pinLedVermelhoA, OUTPUT);
+  pinMode(pinLedVermelhoB, OUTPUT);
+  pinMode(pinLedAmareloA, OUTPUT);
+  pinMode(pinLedAmareloB, OUTPUT);
+  pinMode(11, OUTPUT); 
+  pinMode(2, OUTPUT);
+ }
+  void loop()
+  {
+    digitalWrite (pinLedVermelhoA, HIGH);
+    digitalWrite(2, HIGH);
+    delay(3000);
+    digitalWrite (2,LOW);
+    digitalWrite (pinLedAmareloB,HIGH);
+    delay(2000);
+    digitalWrite (pinLedAmareloB, LOW);
+   digitalWrite(pinLedVermelhoA,LOW);
+     digitalWrite(pinLedVermelhoB,HIGH);
+    digitalWrite(11,HIGH);
+    delay(3000);
+    digitalWrite(11, LOW);
+    digitalWrite (pinLedAmareloA, HIGH);
+    delay(2000);
+    digitalWrite(pinLedAmareloA, LOW);
+digitalWrite(pinLedVermelhoB,LOW);
+  }
